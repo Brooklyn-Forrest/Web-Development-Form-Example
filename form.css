@@ -1,0 +1,70 @@
+.header {
+    display: inline-block;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 5px;
+}
+
+.dashed{
+    border-width: 2px;
+    border-color: black;
+    border-style: dashed;
+}
+
+.dotted {
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+}
+
+.solid{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+.line{
+    display: inline-block;
+}
+
+#parentform{
+    padding: 5px;
+    border-color: #496aef;
+    border-width: 2px;
+    border-style: double;
+    width: 620px;
+}
+
+.allergy{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.small {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+.innerdiv {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    /* Debugging to see div positioning */
+
+    /*border-width: 2px;*/
+    /*border-color: black;*/
+    /*border-style: solid;*/
+
+    vertical-align: top;
+}
+
+.lengthwise {
+    padding: 10px;
+    width: 96%;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href='form.css'>
+    <script type="text/javascript" src="officefunctions.js"></script>
+</head>
+<body>
+<div class="header">
+    <h3 style="float: left; display: inline-block;">John Doe's Patient Care</h3>
+    <p style="padding-left: 100px; display: inline-block">1234 NW Something St, Lee's Summit, MO 64086</p>
+</div>
+<div>
+    <form name="parent" id="parentform">
+        <div class="line">
+            <label for="patlname"><h4>Patient's Last Name: </h4></label>
+            <input type="text" maxlength="50" name="patlname" id="patlname">
+        </div>
+        <div class="line">
+            <label for="patmname"><h4>Middle Name: </h4></label>
+            <input type="text" maxlength="50" name="patmname" id="patmname">
+        </div>
+        <div class="line">
+            <label for="patfname"><h4>First Name: </h4></label>
+            <input type="text" maxlength="50" name="patfname" id="patfname">
+        </div>
+        <br>
+        <div class="line">
+            <label for="phonenum"><h4>Mobile Phone Number: </h4></label>
+            <input type="text" maxlength="15" name="phonenum" id="phonenum">
+        </div>
+        <div class="line">
+            <label for="email"><h4>Email Address: </h4></label>
+            <input type="text" maxlength="50" name="email" id="email">
+        </div>
+        <br>
+        <div class="line">
+            <h4>Preferred Contact Method</h4>
+            <label for="phone">Phone</label>
+            <input type="radio" name="conmethod" id="phone">
+            <label for="emailcon">Email</label>
+            <input type="radio" name="conmethod" id="emailcon">
+        </div>
+        <br><br>
+        <div class="line">
+            <label for="address" style="font-weight: bold; padding-right: 10px;">Address of Residency:</label>
+            <input type="text" maxlength="150" name="address" id="address" style="width: 300px;">
+            <br><br>
+            <label for="city" class="small" style="padding-right: 10px; padding-left: 125px;">City:</label>
+            <input type="text" maxlength="150" name="city" id="city" style="width: 200px;">
+            <label for="state" class="small" style="padding-right: 10px; padding-left: 10px;">State (Abbreviation):</label>
+            <input type="text" maxlength="2" name="state" id="state" style="width: 50px;">
+            <br>
+        </div>
+        <br><br>
+        <div class="line">
+            <label for="baddress" style="font-weight: bold; padding-right: 52px;">Billing Address:</label>
+            <input type="text" maxlength="150" name="baddress" id="baddress" style="width: 300px;">
+            <br><br>
+            <label for="city2" class="small" style="padding-right: 10px; padding-left: 125px;">City:</label>
+            <input type="text" maxlength="150" name="city2" id="city2" style="width: 200px;">
+            <label for="state2" class="small" style="padding-right: 10px; padding-left: 10px;">State (Abbreviation):</label>
+            <input type="text" maxlength="2" name="state2" id="state2" style="width: 50px;">
+            <br>
+        </div>
+        <br><br>
+        <div class="line solid lengthwise">
+                <h4>Allergies</h4>
+            <div class="innerdiv">
+                <b>Generic</b>
+                <div class="allergy">
+                    <input type="checkbox" id="mold" name="mold">
+                    <label for="mold">Mold</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="pollen" name="pollen">
+                    <label for="pollen">Pollen</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="latex" name="latex">
+                    <label for="latex">Latex</label>
+                </div>
+            </div>
+            <div class="innerdiv">
+                <b>Food</b>
+                <div class="allergy">
+                    <input type="checkbox" id="gluten" name="gluten">
+                    <label for="gluten">Gluten</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="lactose" name="lactose">
+                    <label for="lactose">Lactose</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="nut" name="nut">
+                    <label for="nut">Tree Nuts</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="eggs" name="eggs">
+                    <label for="eggs">Eggs</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="fish" name="fish">
+                    <label for="fish">Fish</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="soy" name="soy">
+                    <label for="soy">Soy</label>
+                </div>
+            </div>
+            <div class="innerdiv">
+                <b>Pets</b>
+                <div class="allergy">
+                    <input type="checkbox" id="cat" name="cat">
+                    <label for="cat">Cat</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="dog" name="dog">
+                    <label for="dog">Dog</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="other" name="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <div class="innerdiv">
+                <b>Medications</b>
+                <div class="allergy">
+                    <input type="checkbox" id="penicillin" name="penicillin">
+                    <label for="penicillin">Penicillin</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="ibprofen" name="ibprofen">
+                    <label for="ibprofen">Ibprofen</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="asprin" name="asprin">
+                    <label for="asprin">Asprin</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="sulfa" name="sulfa">
+                    <label for="sulfa">Sulfa</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="rituxian" name="rituxian">
+                    <label for="rituxian">Rituxian</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="insulin" name="insulin">
+                    <label for="insulin">Insulin</label>
+                </div>
+                <div class="allergy">
+                    <input type="checkbox" id="othermed" name="othermed" onclick="enabledisable('medicalall')">
+                    <label for="othermed">Other</label>
+                    <label for="medicalall"></label>
+                    <input type="text" maxlength="50" width="25" disabled id="medicalall">
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="line">
+            <h4>Medical History</h4>
+            <br>
+        </div>
+        <div>
+
+        </div>
+    </form>
+</div>
+</body>
