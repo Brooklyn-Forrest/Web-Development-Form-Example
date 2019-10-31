@@ -13,15 +13,27 @@
     <form name="parent" id="parentform">
         <div class="line">
             <label for="patlname"><h4>Patient's Last Name: </h4></label>
-            <input type="text" maxlength="50" name="patlname" id="patlname">
-        </div>
-        <div class="line">
-            <label for="patmname"><h4>Middle Name: </h4></label>
-            <input type="text" maxlength="50" name="patmname" id="patmname">
+            <input type="text" maxlength="50" name="patlname" id="patlname" class="underlineonly">
         </div>
         <div class="line">
             <label for="patfname"><h4>First Name: </h4></label>
-            <input type="text" maxlength="50" name="patfname" id="patfname">
+            <input type="text" maxlength="50" name="patfname" id="patfname" class="underlineonly">
+        </div>
+        <div class="line">
+            <label for="patmname"><h4>Middle Name: </h4></label>
+            <input type="text" maxlength="50" name="patmname" id="patmname" class="underlineonly">
+        </div>
+        <br>
+        <div class="line">
+            <label for="dob">Date of Birth (MM/DD/YYYY)</label>
+            <input type="text" class="underlineonly" width="10" id="dob" name="dob" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" style="padding-left: 30px;"/>
+        </div>
+        <div class="line" style="padding-left: 40px;">
+            <p>Sex</p>
+            <label for="sexf">F</label>
+            <input type="radio" id="sexf" name="sex"/>
+            <label for="sexm">M</label>
+            <input type="radio" id="sexm" name="sex"/>
         </div>
         <br>
         <div class="line">
@@ -41,18 +53,7 @@
             <input type="radio" name="conmethod" id="emailcon">
         </div>
         <br><br>
-        <div class="line">
-            <label for="address" style="font-weight: bold; padding-right: 10px;">Address of Residency:</label>
-            <input type="text" maxlength="150" name="address" id="address" style="width: 300px;">
-            <br><br>
-            <label for="city" class="small" style="padding-right: 10px; padding-left: 125px;">City:</label>
-            <input type="text" maxlength="150" name="city" id="city" style="width: 200px;">
-            <label for="state" class="small" style="padding-right: 10px; padding-left: 10px;">State (Abbreviation):</label>
-            <input type="text" maxlength="2" name="state" id="state" style="width: 50px;">
-            <br>
-        </div>
-        <br><br>
-        <div class="line">
+        <div class="line" id="billaddress">
             <label for="baddress" style="font-weight: bold; padding-right: 52px;">Billing Address:</label>
             <input type="text" maxlength="150" name="baddress" id="baddress" style="width: 300px;">
             <br><br>
@@ -60,6 +61,18 @@
             <input type="text" maxlength="150" name="city2" id="city2" style="width: 200px;">
             <label for="state2" class="small" style="padding-right: 10px; padding-left: 10px;">State (Abbreviation):</label>
             <input type="text" maxlength="2" name="state2" id="state2" style="width: 50px;">
+            <br>
+        </div>
+        <br><br>
+        <div class="line" id="resaddress">
+            <label for="address" style="font-weight: bold; padding-right: 10px;">Address of Residency:</label>
+            <input type="text" maxlength="150" name="address" id="address" style="width: 300px;">
+            <br><br>
+            <button type=button onclick="autofill('billaddress', 'resaddress')">Same as Billing Address</button>
+            <label for="city" class="small" style="padding-right: 10px; padding-left: 7px">City:</label>
+            <input type="text" maxlength="150" name="city" id="city" style="width: 200px;">
+            <label for="state" class="small" style="padding-right: 10px; padding-left: 10px;">State (Abbreviation):</label>
+            <input type="text" maxlength="2" name="state" id="state" style="width: 50px;">
             <br>
         </div>
         <br><br>
@@ -161,10 +174,45 @@
         <div class="line">
             <h4>Medical History</h4>
             <br>
-        </div>
-        <div>
-
+            <i>Do you or anyone in your family have a history of...</i>
+            <br><br>
+            <div class="line">
+                <input type="checkbox" id="asthma" name="asthma" onclick="enabledisable('ihaveasthma')">
+                <label for="asthma">Asthma</label>
+            </div>
+            <div class="line" style="padding-left: 70px;">
+                <input type="checkbox" id="ihaveasthma" name="ihaveasthma" disabled>
+                <label for="ihaveasthma">I Have This</label>
+            </div>
+            <br>
+            <div class="line">
+                <input type="checkbox" id="diabetes" name="diabetes" onclick="enabledisable('ihavediabetes')">
+                <label for="diabetes">Diabetes</label>
+            </div>
+            <div class="line" style="padding-left: 63px;">
+                <input type="checkbox" id="ihavediabetes" name="ihavediabetes" disabled>
+                <label for="ihavediabetes">I Have This</label>
+            </div>
+            <br>
+            <div class="line">
+                <input type="checkbox" id="stroke" name="stroke" onclick="enabledisable('ihadstroke')">
+                <label for="asthma">Stoke</label>
+            </div>
+            <div class="line" style="padding-left: 83px;">
+                <input type="checkbox" id="ihadstroke" name="ihadstroke" disabled>
+                <label for="ihadstroke">I Have Had This</label>
+            </div>
+            <br>
+            <div class="line">
+                <input type="checkbox" id="heartdis" name="heartdis" onclick="enabledisable('ihaveheartdis')">
+                <label for="heartdis">Heart Disease</label>
+            </div>
+            <div class="line" style="padding-left: 30px;">
+                <input type="checkbox" id="ihaveheartdis" name="ihaveheartdis" disabled>
+                <label for="ihaveheartdis">I Have This</label>
+            </div>
         </div>
     </form>
 </div>
 </body>
+</html>
