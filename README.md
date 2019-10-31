@@ -13,7 +13,7 @@ b. html /html (missing open html tag...? maybe?)
 
 c. head /head DONE
 
-d. title /title (this is page title and favicon)
+d. title /title DONE
 
 e. body /body DONE
 
