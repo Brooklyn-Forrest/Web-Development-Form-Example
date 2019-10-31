@@ -1,18 +1,19 @@
 # Web-Development-Form-Example
 For CSIS 228 Final Project
 
+FYI I took out the tag symbols because git interprets that literally and hides it.
 Project requirement goals:
 1. HTML elements
 
-a. <!DOCTYPE html> DONE
+a. !DOCTYPE html DONE
 
-b. <html> </html> (missing open html tag...? maybe?)
+b. html /html (missing open html tag...? maybe?)
 
-c. <head> </head> DONE
+c. head /head DONE
 
-d. <title> </title> (this is page title and favicon)
+d. title /title (this is page title and favicon)
 
-e. <body> </body> DONE
+e. body /body DONE
 
 f. Team names and date (place this in footer)
 
