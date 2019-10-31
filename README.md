@@ -3,11 +3,17 @@ For CSIS 228 Final Project
 
 Project requirement goals:
 1. HTML elements
+
 a. <!DOCTYPE html> DONE
+
 b. <html> </html> (missing open html tag...? maybe?)
+
 c. <head> </head> DONE
+
 d. <title> </title> (this is page title and favicon)
+
 e. <body> </body> DONE
+
 f. Team names and date (place this in footer)
 
 2. write() method
