@@ -2,7 +2,9 @@
 For CSIS 228 Final Project
 
 FYI I took out the tag symbols because git interprets that literally and hides it.
+
 Project requirement goals:
+
 1. HTML elements
 
 a. !DOCTYPE html DONE
