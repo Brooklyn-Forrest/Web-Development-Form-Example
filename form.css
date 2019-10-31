@@ -1,9 +1,12 @@
 .header {
-    display: inline-block;
     border-width: 2px;
     border-color: black;
     border-style: solid;
     padding: 5px;
+    background-color: white;
+    text-align: center;
+    width: 625px;
+    margin: auto;
 }
 
 .dashed{
@@ -30,10 +33,12 @@
 
 #parentform{
     padding: 5px;
-    border-color: #496aef;
-    border-width: 2px;
+    border-color: black;
+    border-width: 3px;
     border-style: double;
     width: 620px;
+    background-color: white;
+    margin: auto;
 }
 
 .allergy{
@@ -98,4 +103,8 @@ button {
 button:hover {
     background-color: black;
     cursor: pointer;
+}
+
+html {
+    background-image: url("watercolor-texture-dark-01-03-preview-00-.jpg");
 }
