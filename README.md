@@ -9,7 +9,7 @@ Project requirement goals:
 
 a. !DOCTYPE html DONE
 
-b. html /html (missing open html tag...? maybe?)
+b. html /html DONE
 
 c. head /head DONE
 
@@ -21,15 +21,15 @@ f. Team names and date (place this in footer)
 
 2. write() method
 
-3. global variables
+3. global variables DONE
 
-4. window.alert() method using onclick attribute
+4. window.alert() method using onclick attribute DONE (on exception)
 
 5. document.write method
 
-6. 1 or more images
+6. 1 or more images DONE (background image, favicon)
 
-7. If, else if statement
+7. If, else if statement DONE
 
 8. Specifying an event handler with the addEventListener() method
 
