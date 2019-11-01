@@ -108,3 +108,24 @@ button:hover {
 html {
     background-image: url("watercolor-texture-dark-01-03-preview-00-.jpg");
 }
+
+#submit, #back{
+    font-size: 12px !important;
+    background-color: white !important;
+    color: black !important;
+}
+
+#submit:hover{
+    background-color: black !important;
+    color: white !important;
+}
+
+.red:disabled{
+    color: white;
+    display: none;
+}
+
+.red:enabled{
+    display: initial;
+    color: black;
+}
