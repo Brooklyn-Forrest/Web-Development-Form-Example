@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>John Doe's Patient Care First Time Patient</title>
+	<link rel='stylesheet' href='form.css'>
+	<script type="text/javascript" src="officefunctions.js"></script>
+	<script src="jquery-3.4.1.js"></script>
+	<script src="jquery-ui.js"></script>
+	<link rel="icon" href="favicon_n6D_icon.ico" type="image/ico">
+</head>
+<body>
+<div class="header">
+	<h3 style="display: inline-block;">John Doe's Patient Care</h3>
+	<p style="padding-left: 100px; display: inline-block">1234 NW Something St, Lee's Summit, MO 64086</p>
+</div>
+<div>
+	<form name="parent" id="parentform" method="post">
+		<div class="line">
+			<h4>Past Medical Care</h4>
+			<b>Did you have a primary care doctor before this?</b><br>
+			<input type="radio" id="primarycprev" name="primarycprev"
+				   onclick="enabledisableinputs('prevcare', 'primarycprev', '1')">
+			<label for="primarycprev">Yes</label>
+			<input type="radio" id="primarycno" name="primarycprev"
+				   onclick="enabledisableinputs('prevcare', 'primarycno', '0')">
+			<label for="primarycno">No</label>
+		</div>
+		<br>
+		<div class="line" id="prevcare">
+			<div class="line" style="padding-right: 5px;">
+				<label for="prevdoc" hidden><h4>Doctor's Name: </h4></label>
+				<input type="text" maxlength="50" name="prevdoc" id="prevdoc" class="underlineonly red" disabled>
+			</div>
+			<div class="line">
+				<label for="prevhos" hidden><h4>Hospital Name:</h4></label>
+				<input type="text" maxlength="50" name="prevhos" id="prevhos" class="underlineonly red" disabled>
+			</div>
+		</div>
+		<br><br>
+		<div class="line">
+			<b>Do you take any medications?</b>
+			<br>
+			<input type="radio" id="medsyes" name="medsx" value='1'
+				   onclick="enabledisableinputs('med', 'medsyes', '1')">
+			<label for="primarycprev">Yes</label>
+			<input type="radio" id="medsno" name="medsx" value='0' onclick="enabledisableinputs('med', 'medsno', '0')">
+			<label for="primarycno">No</label>
+		</div>
+		<div class="line" id="med">
+			<label for="medications" hidden>Describe:</label>
+			<input id="medications" name="medications" type="text" class="underlineonly red" maxlength="200" disabled>
+		</div>
+		<br><br>
+		<div class="line">
+			<b>Have you had any surgeries?</b>
+			<br>
+			<input type="radio" id="surgyes" name="surgx" value='1'
+				   onclick="enabledisableinputs('surg', 'surgyes', '1')">
+			<label for="primarycprev">Yes</label>
+			<input type="radio" id="surgno" name="surgx" value='0' onclick="enabledisableinputs('surg', 'surgyes', '0')">
+			<label for="primarycno">No</label>
+		</div>
+		<div class="line" id="surg">
+			<label for="surgeries" hidden style="padding-left: 7px;">Describe:</label>
+			<input id="surgeries" name="surgeries" type="text" class="underlineonly red" maxlength="200" disabled>
+		</div>
+	</form>
+</div>
+<div style="background-color: white; border-width: 3px; border-color: black; border-style: double; width: 620px; margin: auto; text-align: center; padding: 5px;">
+	<button id="back" onclick="window.location.href='index.html'">Back</button>
+	<button id="submit" onclick="parent.submit()">Continue</button>
+</div>
+</body>
+</html>
