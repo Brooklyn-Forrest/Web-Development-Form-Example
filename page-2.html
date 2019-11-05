@@ -3,7 +3,6 @@
 <head>
 	<title>John Doe's Patient Care First Time Patient</title>
 	<link rel='stylesheet' href='form.css'>
-	<script type="text/javascript" src="officefunctions.js"></script>
 	<script src="jquery-3.4.1.js"></script>
 	<script src="jquery-ui.js"></script>
 	<link rel="icon" href="favicon_n6D_icon.ico" type="image/ico">
@@ -14,10 +13,10 @@
 	<p style="padding-left: 100px; display: inline-block">1234 NW Something St, Lee's Summit, MO 64086</p>
 </div>
 <div>
-	<form name="parent" id="parentform" method="post">
+	<form name="parent" id="parentform" method="post" action="new-patient-complete.html">
 		<div class="line">
 			<h4>Past Medical Care</h4>
-			<b>Did you have a primary care doctor before this?</b><br>
+			<b>Did you have a primary care doctor before this?*</b><br>
 			<input type="radio" id="primarycprev" name="primarycprev"
 				   onclick="enabledisableinputs('prevcare', 'primarycprev', '1')">
 			<label for="primarycprev">Yes</label>
@@ -38,7 +37,7 @@
 		</div>
 		<br><br>
 		<div class="line">
-			<b>Do you take any medications?</b>
+			<b>Do you take any medications?*</b>
 			<br>
 			<input type="radio" id="medsyes" name="medsx" value='1'
 				   onclick="enabledisableinputs('med', 'medsyes', '1')">
@@ -52,23 +51,28 @@
 		</div>
 		<br><br>
 		<div class="line">
-			<b>Have you had any surgeries?</b>
+			<b>Have you had any surgeries?*</b>
 			<br>
 			<input type="radio" id="surgyes" name="surgx" value='1'
 				   onclick="enabledisableinputs('surg', 'surgyes', '1')">
-			<label for="primarycprev">Yes</label>
+			<label for="surgyes">Yes</label>
 			<input type="radio" id="surgno" name="surgx" value='0' onclick="enabledisableinputs('surg', 'surgyes', '0')">
-			<label for="primarycno">No</label>
+			<label for="surgno">No</label>
 		</div>
 		<div class="line" id="surg">
 			<label for="surgeries" hidden style="padding-left: 7px;">Describe:</label>
 			<input id="surgeries" name="surgeries" type="text" class="underlineonly red" maxlength="200" disabled>
 		</div>
+		<br><br>
+		<div class="line">
+			<h4>Insurance</h4>
+		</div>
 	</form>
 </div>
 <div style="background-color: white; border-width: 3px; border-color: black; border-style: double; width: 620px; margin: auto; text-align: center; padding: 5px;">
 	<button id="back" onclick="window.location.href='index.html'">Back</button>
-	<button id="submit" onclick="parent.submit()">Continue</button>
+	<button id="submit">Finish</button>
 </div>
 </body>
 </html>
+<script type="text/javascript" src="officefunctions.js"></script>
