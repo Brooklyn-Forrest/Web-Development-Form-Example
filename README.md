@@ -17,13 +17,13 @@ d. title /title DONE
 
 e. body /body DONE
 
-f. Team names and date (place this in footer)
+f. Team names and date (place this in footer) DONE
 
 2. write() method
 
 3. global variables DONE
 
-4. window.alert() method using onclick attribute DONE (on exception)
+4. window.alert() method using onclick attribute DONE
 
 5. document.write method
 
@@ -31,8 +31,8 @@ f. Team names and date (place this in footer)
 
 7. If, else if statement DONE
 
-8. Specifying an event handler with the addEventListener() method
+8. Specifying an event handler with the addEventListener() method DONE
 
-9. getElementByID or getElementByTagName or getElementsByName COMPLETE
+9. getElementByID or getElementByTagName or getElementsByName DONE
 
 10. Exception handling: try, catch, finally
