@@ -74,3 +74,39 @@ function autofill(divid1, divid2){
     }
 
 }
+
+
+document.getElementById("submit").addEventListener("click", function() {
+    objs = document.getElementById('parentform').getElementsByTagName('input');
+    phone = document.getElementById('phonenum');
+    email = document.getElementById('email');
+
+    // Check for required inputs
+    for (let ele of objs) {
+        if (ele.hasAttribute('required')) {
+                if (ele.value.length === 0) {
+                    window.alert('Fields marked with an asterisk are required.');
+                    return;
+                }
+        }
+        else if(ele.type === 'radio')
+        {
+            radios = document.getElementsByName(ele.name);
+
+            if(radios[0].checked || radios[1].checked){
+
+            }
+            else{
+            window.alert('Fields marked with an asterisk are required.');
+            return;
+            }
+        }
+    }
+
+    if (phone.value || email.value ){
+        parentform.submit();
+    }
+    else{
+        window.alert('You must enter at least one contact method.');
+    }
+});
