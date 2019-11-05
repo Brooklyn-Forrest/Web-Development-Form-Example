@@ -31,7 +31,7 @@
     display: inline-block;
 }
 
-#parentform{
+#parentform, #formlabel{
     padding: 5px;
     border-color: black;
     border-width: 3px;
@@ -128,4 +128,9 @@ html {
 .red:enabled{
     display: initial;
     color: black;
+}
+
+.alert{
+    font-size: 9px;
+    color: red;
 }
