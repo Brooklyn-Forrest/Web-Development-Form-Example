@@ -4,7 +4,9 @@ For CSIS 228 Final Project
 FYI I took out the tag symbols because git interprets that literally and hides it. 
 
 Project Completion Percentage: 70%
+
 Project Requirements Completion Percentage: 86%
+
 
 Project requirement goals:
 
