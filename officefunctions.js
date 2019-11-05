@@ -75,6 +75,8 @@ function autofill(divid1, divid2){
 
 }
 
+// Optionally, document onload() could be used instead of just doing this outright. Instead we just
+// put the script at the bottom to load in last.
 
 document.getElementById("submit").addEventListener("click", function() {
     objs = document.getElementById('parentform').getElementsByTagName('input');
@@ -103,10 +105,14 @@ document.getElementById("submit").addEventListener("click", function() {
         }
     }
 
-    if (phone.value || email.value ){
-        parentform.submit();
+    if (window.location.href.includes("index.html" )) {
+        if (phone.value || email.value) {
+            parentform.submit();
+        } else {
+            window.alert('You must enter at least one contact method.');
+        }
     }
     else{
-        window.alert('You must enter at least one contact method.');
+        parentform.submit();
     }
 });
