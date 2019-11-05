@@ -3,7 +3,6 @@
 <head>
     <title>John Doe's Patient Care First Time Patient</title>
     <link rel='stylesheet' href='form.css'>
-    <script type="text/javascript" src="officefunctions.js"></script>
     <script src="jquery-3.4.1.js"></script>
     <script src="jquery-ui.js"></script>
     <link rel="icon" href="favicon_n6D_icon.ico" type="image/ico">
@@ -35,7 +34,7 @@
         <div class="line" style="padding-left: 40px;">
             <p>Sex*</p>
             <label for="sexf">F</label>
-            <input type="radio" id="sexf" name="sex" required />
+            <input type="radio" id="sexf" name="sex"/>
             <label for="sexm">M</label>
             <input type="radio" id="sexm" name="sex"/>
         </div>
@@ -52,19 +51,19 @@
         <div class="line">
             <h4>Preferred Contact Method*</h4>
             <label for="phone">Phone</label>
-            <input type="radio" name="conmethod" id="phone" required>
+            <input type="radio" name="conmethod" id="phone">
             <label for="emailcon">Email</label>
             <input type="radio" name="conmethod" id="emailcon">
         </div>
         <br><br>
         <div class="line" id="billaddress">
             <label for="baddress" style="font-weight: bold; padding-right: 52px;">Billing Address:*</label>
-            <input type="text" maxlength="150" name="baddress" id="baddress" style="width: 300px;">
+            <input type="text" maxlength="150" name="baddress" id="baddress" style="width: 300px;" required>
             <br><br>
             <label for="city2" class="small" style="padding-right: 12px; padding-left: 128px;">City:</label>
-            <input type="text" maxlength="150" name="city2" id="city2" style="width: 200px;">
+            <input type="text" maxlength="150" name="city2" id="city2" style="width: 200px;" required>
             <label for="state2" class="small" style="padding-right: 12px; padding-left: 13px;">State (Abbreviation):</label>
-            <input type="text" maxlength="2" name="state2" id="state2" style="width: 50px;">
+            <input type="text" maxlength="2" name="state2" id="state2" style="width: 50px;" required>
             <br>
         </div>
         <br><br>
@@ -81,7 +80,7 @@
         </div>
         <br><br>
         <div class="line solid lengthwise">
-                <h4>Allergies</h4>
+            <h4>Allergies</h4>
             <div class="innerdiv">
                 <b>Generic</b>
                 <div class="allergy">
@@ -246,12 +245,15 @@
     </form>
 </div>
 <br>
-<div style="background-color: white; border-width: 3px; border-color: black; border-style: double; width: 620px; margin: auto; text-align: center; padding: 5px;">
-    <button id="submit" onclick="parent.submit()">Continue</button>
+<div id="bottomdiv" style="background-color: white; border-width: 3px; border-color: black; border-style: double; width: 620px; margin: auto; text-align: center; padding: 5px;">
+    <button id="submit">Continue</button>
 </div>
 </body>
 <br><br><br>
 <footer style="background-color: white; width: fit-content">
     JS Final Project 2019
+    <p>Innocent Njobara, Elizabeth DeGraeve, Brooklyn Forrest</p>
+    <p>12/10/2019</p>
 </footer>
 </html>
+<script type="text/javascript" src="officefunctions.js"></script>
