@@ -134,3 +134,52 @@ html {
     font-size: 9px;
     color: red;
 }
+.topnav{
+	font-size: 16px;
+	background-color: white;
+	padding: 5px;
+	margin-bottom: 7px;
+	text-align: center;
+
+	
+}
+
+.topnav a{
+	padding-right: 20px;
+	text-decoration: none;
+	color: blue;
+}
+
+topnav * {
+	float: left;
+}
+.topnav {
+	padding: 5px 0 5 px 0;
+	text-align: center;
+	line-height: 32px;
+	background-color: #8b0000;
+}
+
+ul.topnav {
+	margin-top: 15px;
+}
+
+.topnav li {
+	display: inline;
+	padding: 0 10 px 0 10 px;
+	font-size: 20px;
+}
+
+.topnav a {
+	text-decoration: none;
+	color: #fff;
+	padding: 8px;
+	font-variant: large-caps;
+
+}
+
+.topnav a:hover {
+	color: black;
+}
+ 
+	
