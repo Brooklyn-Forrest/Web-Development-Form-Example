@@ -154,7 +154,7 @@ topnav * {
 	float: left;
 }
 .topnav {
-	padding: 5px 0 5 px 0;
+	padding: 5px 0 5px 0;
 	text-align: center;
 	line-height: 32px;
 	background-color: #8b0000;
@@ -166,7 +166,7 @@ ul.topnav {
 
 .topnav li {
 	display: inline;
-	padding: 0 10 px 0 10 px;
+	padding: 0 10px 0 10px;
 	font-size: 20px;
 }
 
