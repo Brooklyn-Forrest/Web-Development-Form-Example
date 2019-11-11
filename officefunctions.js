@@ -116,3 +116,21 @@ document.getElementById("submit").addEventListener("click", function() {
         parentform.submit();
     }
 });
+
+
+document.getElementById('contact').addEventListener('click', openwindow);
+
+function openwindow(){
+    var windowx = window.open("", "MsgWindow", "width=200, height=100");
+    windowx.document.write("<b>This window was written using document.write().</b>");
+}
+
+try{
+    functionthatdoesnotexist();
+}
+catch(e){
+    console.log(e + "; This function is fake.");
+}
+finally{
+    console.log("Try, catch, finally executed.");
+}
