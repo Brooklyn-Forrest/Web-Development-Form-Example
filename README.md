@@ -3,9 +3,9 @@ For CSIS 228 Final Project
 
 FYI I took out the tag symbols because git interprets that literally and hides it. 
 
-Project Completion Percentage: 75%
+Project Completion Percentage: 90%
 
-Project Requirements Completion Percentage: 86%
+Project Requirements Completion Percentage: 100%
 
 
 Project requirement goals:
@@ -24,13 +24,13 @@ e. body /body DONE
 
 f. Team names and date (place this in footer) DONE
 
-2. write() method
+2. write() method DONE
 
 3. global variables DONE
 
 4. window.alert() method using onclick attribute DONE
 
-5. document.write method
+5. document.write method DONE
 
 6. 1 or more images DONE (background image, favicon)
 
@@ -40,4 +40,4 @@ f. Team names and date (place this in footer) DONE
 
 9. getElementByID or getElementByTagName or getElementsByName DONE
 
-10. Exception handling: try, catch, finally
+10. Exception handling: try, catch, finally DONE
