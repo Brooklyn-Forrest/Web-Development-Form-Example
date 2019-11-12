@@ -134,52 +134,59 @@ html {
     font-size: 9px;
     color: red;
 }
-.topnav{
-	font-size: 16px;
-	background-color: white;
-	padding: 5px;
-	margin-bottom: 7px;
-	text-align: center;
 
-	
+.topnav{
+    font-size: 16px;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 7px;
+    text-align: center;
 }
 
 .topnav a{
-	padding-right: 20px;
-	text-decoration: none;
-	color: blue;
+    padding-right: 20px;
+    text-decoration: none;
+    color: blue;
 }
 
-topnav * {
-	float: left;
-}
 .topnav {
-	padding: 5px 0 5px 0;
-	text-align: center;
-	line-height: 32px;
-	background-color: #8b0000;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    line-height: 32px;
+    background-color: saddlebrown;
 }
 
 ul.topnav {
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 .topnav li {
-	display: inline;
-	padding: 0 10px 0 10px;
-	font-size: 20px;
+    display: inline;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
 }
 
 .topnav a {
-	text-decoration: none;
-	color: #fff;
-	padding: 8px;
-	font-variant: large-caps;
-
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
 }
 
 .topnav a:hover {
-	color: black;
+    color: black;
 }
- 
-	
+
+/*Pulled from css-tricks and modified*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: black;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
