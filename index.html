@@ -5,16 +5,17 @@
     <link rel='stylesheet' href='form.css'>
     <script src="jquery-3.4.1.js"></script>
     <script src="jquery-ui.js"></script>
+    <script src="jquery.cookie.min.js"></script>
     <link rel="icon" href="favicon_n6D_icon.ico" type="image/ico">
 </head>
 <body>
 <div class="topnav">
-	<img src="formlogo.jpg" alt="John Doe's Logo">
-	 <a href="#">Home</a>
-	 <a href="#">First Time Patient</a>
-	 <a href="#">Returning Patient</a>
-	 <a href="#">Services</a>
-	 <a href="#" id="contact">Contact</a>
+    <img src="formlogo.jpg" alt="John Doe's Logo">
+    <a href="#">Home</a>
+    <a href="#">First Time Patient</a>
+    <a href="#">Returning Patient</a>
+    <a href="#">Services</a>
+    <a href="#" id="contact">Contact</a>
 </div>
 <div class="header">
     <h3 style="display: inline-block;">John Doe's Patient Care</h3>
@@ -37,7 +38,7 @@
         <br>
         <div class="line">
             <label for="dob">Date of Birth (MM/DD/YYYY)*</label>
-            <input type="text" class="underlineonly" required width="10" id="dob" name="dob" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" style="padding-left: 30px;"/>
+            <input type="text" class="underlineonly" required width="10" id="dob" name="dob" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" style="padding-left: 25px; width: 100px;"/>
         </div>
         <div class="line" style="padding-left: 40px;">
             <p>Sex*</p>
