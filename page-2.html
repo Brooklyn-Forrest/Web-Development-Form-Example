@@ -10,11 +10,11 @@
 <body>
 <div class="topnav">
 	<img src="formlogo.jpg" alt="John Doe's Logo">
-	 <a href="#">Home</a>
-	 <a href="#">First Time Patient</a>
-	 <a href="#">Returning Patient</a>
-	 <a href="#">Services</a>
-	 <a href="#" id="contact">Contact</a>
+	<a href="#">Home</a>
+	<a href="#">First Time Patient</a>
+	<a href="#">Returning Patient</a>
+	<a href="#">Services</a>
+	<a href="#" id="contact">Contact</a>
 </div>
 <div class="header">
 	<h3 style="display: inline-block;">John Doe's Patient Care</h3>
@@ -41,9 +41,10 @@
 			<div class="line">
 				<label for="prevhos" hidden><h4>Hospital Name:</h4></label>
 				<input type="text" maxlength="50" name="prevhos" id="prevhos" class="underlineonly red" disabled>
+
 			</div>
 		</div>
-		<br><br>
+		<br><br><br>
 		<div class="line">
 			<b>Do you take any medications?*</b>
 			<br>
@@ -55,7 +56,7 @@
 		</div>
 		<div class="line" id="med">
 			<label for="medications" hidden>Describe:</label>
-			<input id="medications" name="medications" type="text" class="underlineonly red" maxlength="200" disabled>
+			<input id="medications" name="medications" type="text" class="underlineonly red" maxlength="200" disabled style="width: 300px;" autocomplete="off">
 		</div>
 		<br><br>
 		<div class="line">
@@ -69,61 +70,62 @@
 		</div>
 		<div class="line" id="surg">
 			<label for="surgeries" hidden style="padding-left: 7px;">Describe:</label>
-			<input id="surgeries" name="surgeries" type="text" class="underlineonly red" maxlength="200" disabled>
+			<input id="surgeries" name="surgeries" type="text" class="underlineonly red" maxlength="200" disabled style="width: 300px;" autocomplete="off">
 		</div>
 		<br><br>
 		<div class="line">
 			<h4>Insurance</h4>
 		</div>
+		<br><br>
+		<div class ="line">
+			<label for="jobtype"><h4>Occupation*</h4></label>
+			<select id="jobtype" name="jobtype" required>
+				<option disabled selected>--Select an Option--</option>
+				<option value="publicservice">Public Service</option>
+				<option value="Technology">Technology</option>
+				<option value="Retail">Retail</option>
+				<option value="Medical">Medical</option>
+				<option value="Laborer">Laborer</option>
+				<option value="Customerservice">Customer Service</option>
+				<option value="Education">Education</option>
+				<option value="Maintenancerepair">Maintenance/Repair</option>
+				<option value="Foodservice">Food Service</option>
+				<option value="Businessmanagement">Business/Management</option>
+				<option value="selfemployed">Self employed</option>
+				<option value="Unemployed">Unemployed</option>
+				<option value="Other">Other</option>
+			</select>
+		</div>
+		<br>
+		<div class="line">
+			<h4>Emergency Contact Information</h4>
+			<div>
+			<label for="firstname">First name*:</label>
+			<input type="text" id="firstname" name="firstname" class="underlineonly" style="margin-left: 64px; padding-left: 5px;" required>
+			</div>
+			<br>
+			<div>
+			<label for="lastname">Last name:</label>
+			<input type="text" id="lastname" name="lastname" class="underlineonly" style="margin-left: 75px; padding-left: 5px;">
+			</div>
+			<br>
+			<div>
+			<label for="relationtopatient">Relation to Patient*:</label>
+			<input type="text" name="relationtopatient" id="relationtopatient" class="underlineonly" style="margin-left: 13px; padding-left: 5px;" required>
+			</div>
+			<br>
+			<div>
+			<label for="phonenumber">Phone number*:</label>
+			<input type="text" name="phonenumber" id="phonenumber" class="underlineonly" style="margin-left: 38px; padding-left: 5px;" required>
+			</div>
+			<br><br>
+		</div>
 	</form>
 </div>
-	
-			<br> 
-		<div class ="line" style >
-		<h4>Occupation</h4>
-		<br>
-		<select>
-		<option value ="Pleaseselect">Please Select</option>
-		<option value ="publicservice">Public service</option>
-		<option value ="Technology">Technology</option>
-		<option value ="Retail">Retail</option>
-		<option value ="Medical">Medical</option>
-		<option value ="Laborer">Laborer</option>
-		<option value ="Customerservice">Customer Service</option>
-		<option value ="Education">Education</option>
-		<option value ="Maintenancerepair">Maintenance/Repair</option>
-		<option value ="Foodservice">Food Service</option>
-		<option value ="Businessmanagement">Business/Management</option>
-		<option value ="Unemployed">Unemployed</option>
-		<option value ="Other">Other</option>
-		</select>
-		</div>
-        <br>
-<br>
-        <div class="line">
-            <h4>Emergency Contact Information</h4>
-            <br>
-    
-  First name:<br>
-  <input type="text" name="firstname">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname">
-  <br>
-  Relation to patient:<br>
-  <input type="text" name="relationtopatient">
-  <br>
-  Phone number:<br>
-  <input type="text" name="phonenumber">
-</form>
-</div>
-    </form>
-</div>
-<br>
-<br><div style="background-color: white; border-width: 3px; border-color: black; border-style: double; width: 620px; margin: auto; text-align: center; padding: 5px;">
+	<div style="background-color: white; border-width: 3px; border-color: black; border-style: double; width: 620px; margin: auto; text-align: center; padding: 5px;">
 	<button id="back" onclick="window.location.href='index.html'">Back</button>
 	<button id="submit">Finish</button>
-</div>
+	</div>
 </body>
 </html>
 <script type="text/javascript" src="officefunctions.js"></script>
