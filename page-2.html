@@ -74,13 +74,24 @@
 		</div>
 		<br><br>
 		<div class="line">
-			<h4>Insurance</h4>
+			<label for="insurance"><h4>Insurance</h4></label>
+			<select id="insurance" name="insurance" required style="width: 155px;">
+				<option disabled selected value="">--Select an Option--</option>
+				<option value="Aetna">Aetna</option>
+				<option value="Cigna">Cigna</option>
+				<option value="Celtic Insurance">Celtic Insurance</option>
+				<option value="UnitedHealthOne">UnitedHealthOne</option>
+				<option value="Kaiser Permanents">Kaiser Permanents</option>
+				<option value="Assurance">Assurance</option>
+				<option value="Human">Human</option>
+				<option value="None of the Above">None of the Above</option>
+			</select>
 		</div>
 		<br><br>
 		<div class ="line">
 			<label for="jobtype"><h4>Occupation*</h4></label>
 			<select id="jobtype" name="jobtype" required>
-				<option disabled selected>--Select an Option--</option>
+				<option disabled selected value="">--Select an Option--</option>
 				<option value="publicservice">Public Service</option>
 				<option value="Technology">Technology</option>
 				<option value="Retail">Retail</option>
