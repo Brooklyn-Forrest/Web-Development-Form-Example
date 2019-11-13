@@ -82,6 +82,7 @@ document.getElementById("submit").addEventListener("click", function() {
     objs = document.getElementById('parentform').getElementsByTagName('input');
     phone = document.getElementById('phonenum');
     email = document.getElementById('email');
+    selectobjs = document.getElementById('parentform').getElementsByTagName('select');
 
     // Check for required inputs
     for (let ele of objs) {
@@ -104,6 +105,14 @@ document.getElementById("submit").addEventListener("click", function() {
             }
         }
     }
+    for(let ele2 of selectobjs){
+        if (ele2.hasAttribute('required')) {
+            if (ele2.value.length === 0) {
+                window.alert('Fields marked with an asterisk are required.');
+                return;
+            }
+        }
+    }
 
     if (window.location.href.includes("index.html" )) {
         if (phone.value || email.value) {
@@ -116,7 +125,6 @@ document.getElementById("submit").addEventListener("click", function() {
         parentform.submit();
     }
 });
-
 
 document.getElementById('contact').addEventListener('click', openwindow);
 
