@@ -1,9 +1,7 @@
 # Web-Development-Form-Example
 For CSIS 228 Final Project
 
-FYI I took out the tag symbols because git interprets that literally and hides it. 
-
-Project Completion Percentage: 95%
+Project Completion Percentage: 100%
 
 Project Requirements Completion Percentage: 100%
 
